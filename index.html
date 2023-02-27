@@ -19,15 +19,43 @@
         left: 0;
         text-align: center;
         }
+        .output{
+          display: none;
+        }
+        .output:target{
+          display: block;
+        }
     </style>
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+    rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+      },
+      corePlugins: {
+        preflight: false,
+      },
+    };
+  </script>
   </head>
   <body>
     <nav
-    class="xl:px-32 flex-no-wrap relative flex w-full items-center justify-between bg-white py-4 shadow-md shadow-black/5  lg:flex-wrap lg:justify-start"
+    class="xl:px-32 relative flex-no-wrap flex w-full items-center justify-between bg-white py-4 shadow-md shadow-black/5  lg:flex-wrap lg:justify-start"
     data-te-navbar-ref>
     <div class="flex w-full flex-wrap items-center justify-between">
       <button
-        class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+        class="block border-0 py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
         type="button"
         data-te-collapse-init
         data-te-target="#navbarSupportedContent1"
@@ -66,7 +94,7 @@
         <ul 
         class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
         data-te-navbar-nav-ref>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
             href="#"
@@ -74,7 +102,7 @@
             >HOME</a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
             href="#"
@@ -94,7 +122,7 @@
             </a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
             href="#"
@@ -114,7 +142,7 @@
             </a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
             href="#"
@@ -134,7 +162,7 @@
             </a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 "
             href="#"
@@ -142,7 +170,7 @@
             >ABOUT</a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30  lg:px-2 [&.active]:text-black/90 "
             href="#"
@@ -150,7 +178,7 @@
             >CONTACT</a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
             href="#"
@@ -170,7 +198,7 @@
             </a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 "
             href="#"
@@ -178,7 +206,7 @@
             >PORTFOLIO</a
           >
         </li>
-        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+        <li class="lg:pr-2 lg:p-0 p-5 mx-3" data-te-nav-item-ref>
           <a
             class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 "
             href="#"
@@ -196,17 +224,126 @@
       </div>
     </div>
   </nav>
-  <div class="bg-[#E7F2ED] p-12">
-    <div class="grid md:grid-cols-3 grid-cols-1 justify-between px-32 bg-[#E7F2ED]
+  <div class="bg-[#E7F2ED] lg:p-12 p-5">
+    <div class="hidden sm:grid sm:grid-cols-3  grid-cols-1 justify-between sm:px-32 px-5 bg-[#E7F2ED]
     ">
       <div class="mt-10"><img src="./image/Rectangle 65.png" alt=""></div>
       <div ><img src="./image/Rectangle66-2.png" alt=""></div>
       <div class="mt-10"><img src="./image/Rectangle 67.png" alt=""></div>
     </div>
+    <div class="sm:hidden visible p-5">
+      <div
+      id="carouselExampleCaptions"
+      class="relative"
+      data-te-carousel-init
+      data-te-carousel-slide>
+      
+      <div
+        class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <div
+          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-active
+          data-te-carousel-item
+          style="backface-visibility: hidden">
+          <img
+            src="./image/Rectangle 65.png"
+            class="block w-full"
+            alt="..." />
+          <div
+            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+            <h5 class="text-xl">First slide label</h5>
+            <p>
+              Some representative placeholder content for the first slide.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item
+          style="backface-visibility: hidden">
+          <img
+            src="./image/Rectangle 66.png"
+            class="block w-full"
+            alt="..." />
+          <div
+            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+            <h5 class="text-xl">Second slide label</h5>
+            <p>
+              Some representative placeholder content for the second slide.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item
+          style="backface-visibility: hidden">
+          <img
+            src="./image/Rectangle 67.png"
+            class="block w-full"
+            alt="..." />
+          <div
+            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+            <h5 class="text-xl">Third slide label</h5>
+            <p>
+              Some representative placeholder content for the third slide.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide="prev">
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Previous</span
+        >
+      </button>
+      <button
+        class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide="next">
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Next</span
+        >
+      </button>
+    </div>
+    </div>
     <div class="text-center">
       <span class="italic" style="font-family: 'Playfair Display', serif;">HEY THERE</span>
       <h1 class="italic text-6xl"  style="font-family: 'Playfair Display', serif;">I’m Haus</h1>
-      <div class="mt-5 px-32">
+      <div class="mt-5 lg:px-32 px-5">
         <span class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero ex, tristique sed dignissim vel, cursus ut magna. Aenean lacinia mi eget orci aliquet pharetra. Duis ut ultricies felis. Nulla vitae mi dictum, scelerisque nibh eget, sagittis ligula.Nulla tortor quam, feugiat id laoreet ac, pellentesque sed tellus. Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus at elit. Aenean vitae arcu auctor, imperdiet nisl quis, interdum lacus.</span>
       </div>
     </div>
@@ -222,14 +359,14 @@
       </div>
     </div>
   </div>
-  <div class="grid md:grid-cols-3 grid-cols-1 bg-[#F2F2E6] px-14 py-7 ">
-    <div class="md:justify-self-end justify-self-center"><img class="h-96 min-w-min" src="./image/Rectangle68-1.png" alt="..."></div>
-    <div class="col-span-2"><h1 class="italic text-4xl mt-10 mb-2"  style="font-family: 'Playfair Display', serif;">Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros</h1>
+  <div class="grid sm:grid-cols-3 grid-cols-1 bg-[#F2F2E6] sm:px-10 px-5 py-7 ">
+    <div class="md:justify-self-end justify-self-center"><img class="h-96 max-w-max" src="./image/67-2.png" alt="..."></div>
+    <div class="col-span-2"><h1 class="italic lg:text-4xl text-2xl mt-10 mb-2"  style="font-family: 'Playfair Display', serif;">Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros</h1>
       <img src="./image/Rectangle 94.png" alt="">
       <div class="mt-5">
         <span class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero ex, tristique sed dignissim vel, cursus ut magna. Aenean lacinia mi eget orci aliquet pharetra. Duis ut ultricies felis. Nulla vitae mi dictum, scelerisque nibh eget, sagittis ligula.Nulla tortor quam, feugiat id laoreet ac, pellentesque sed tellus. Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus at elit. Aenean vitae arcu auctor, imperdiet nisl quis, interdum lacus.</span>
       </div>
-      <div class="md:mt-10 md:mb-0 mb-5 mt-3 flex justify-center md:justify-start">
+      <div class="sm:mt-10 sm:mb-0 mb-5 mt-3 flex justify-center md:justify-start">
         <button
               type="button"
               class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-6 pt-2.5 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] text-xl hover:text-white" style="font-family: 'Playfair Display', serif;">
@@ -239,17 +376,17 @@
     </div>
     
   </div>
-  <div class="p-32 grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="grid gap-28 mb-3">
+  <div class="lg:p-32 p-5 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid lg:gap-28 gap-5 mb-3">
       <div class="relative crdblur">
         <img src="./image/20 22.png" alt="">
-        <div class="cardzoom bg-white  absolute top-[42%] right-[45%]">
+        <div class="cardzoom bg-white  absolute top-[42%] lg:right-[35%] right-[28%]">
           <h3 class="bg-white p-5 ">ARCHITECTURE</h3>
         </div>
       </div>
       <div class="relative crdblur">
         <img src="./image/7 1.png" alt="">
-        <div class="cardzoom bg-white  absolute top-[42%] right-[45%]">
+        <div class="cardzoom bg-white  absolute top-[42%] lg:right-[35%] right-[28%]">
           <h3 class="bg-white p-5 ">PHOTOGRAPHY</h3>
         </div>
       </div>
@@ -259,34 +396,34 @@
     <div class="mb-16">
       <div class="text-center relative top-1/3">
         <h3 class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">THE PORTFOLIO</h3>
-        <h1 class="italic text-6xl"  style="font-family: 'Playfair Display', serif;">VIEW
+        <h1 class="italic lg:text-6xl text-3xl"  style="font-family: 'Playfair Display', serif;">VIEW
           RECENT
           WORK</h1>
       </div>
     </div>
-    <div class="grid gap-28 mb-5">
+    <div class="grid lg:gap-28 gap-5 mb-5">
       <div class="relative crdblur">
         <img src="./image/21 1.png" alt="">
-        <div class="cardzoom bg-white  absolute top-[42%] right-[45%]">
+        <div class="cardzoom bg-white  absolute top-[42%] right-[35%]">
           <h3 class="bg-white p-5 ">INTERIOR</h3>
         </div>
       </div>
       <div class="relative crdblur">
         <img src="./image/22 1.png" alt="">
-        <div class="cardzoom bg-white  absolute top-[42%] right-[45%]">
+        <div class="cardzoom bg-white  absolute top-[42%] right-[35%]">
           <h3 class=" p-5">ANIMAL</h3>
         </div>
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 px-32 bg-[#E7F2ED]">
-    <div class="md:border-r-2 md:border-[#D0D0A7] justify-self-end">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:px-32 px-5 bg-[#E7F2ED]">
+    <div class="md:border-r-2 lg:order-1 order-2 md:border-[#D0D0A7] justify-self-end">
       <div class="col-span-2"><h1 class="italic text-4xl mt-10 mb-2 "  style="font-family: 'Playfair Display', serif;">Tools For Creatives</h1>
         <img src="./image/Rectangle 93.png" alt="">
         <div class="mt-5">
           <span class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</span>
         </div>
-        <div class="mt-10 flex md:justify-start justify-center">
+        <div class="lg:mt-10 mt-5 mb-5 flex md:justify-start justify-center">
           <button
                 type="button"
                 class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-6 pt-2.5 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] text-xl hover:text-white" style="font-family: 'Playfair Display', serif;">
@@ -295,205 +432,296 @@
         </div>
       </div>
     </div>
-    <div>
+    <div class="order-1 lg:order-2">
       <img src="./image/2divphoto.png" alt="">
     </div>
   </div>
-  <div class="px-32 py-12">
+  <div class=" lg:px-28 px-5 lg:py-12 py-7">
     <section class="text-neutral-700 dark:text-neutral-300">
       <div class="grid gap-6 text-center md:grid-cols-3">
         <div>
           <div>
-            <div class="pb-20 px-14 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
+            <div class="pb-20 lg:px-14 px-5 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
               <p class="mt-4">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
               </p>
             </div>
             <div
-              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              class="mx-auto -mt-12 w-24 mb-2 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
               <img
                 src="./image/Ellipse 10.png" />
             </div>
-            
+            <h1>CLIENT NAME HERE</h1>
           </div>
         </div>
         <div>
           <div>
-            <div class="pb-20 px-14 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
+            <div class="pb-20 lg:px-14 px-5 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
               <p class="mt-4">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
               </p>
             </div>
             <div
-              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              class="mx-auto -mt-12 w-24 mb-2 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
               <img
                 src="./image/Ellipse 10 (1).png" />
             </div>
-            
+            <h1>CLIENT NAME HERE</h1>
           </div>
         </div>
         <div>
           <div>
-            <div class="pb-20 px-14 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
+            <div class="pb-20 lg:px-14 px-5 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
               <p class="mt-4">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
               </p>
             </div>
             <div
-              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              class="mx-auto -mt-12 w-24 mb-2 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
               <img
                 src="./image/Ellipse 10 (2).png" />
             </div>
-            
+            <h1>CLIENT NAME HERE</h1>
           </div>
         </div>
       </div>
     </section>
   </div>
- 
-  <div class="bg-[#E7F2ED] p-12">
+  <div class="bg-[#E7F2ED] lg:p-12 px-5">
     <div class="container mx-auto">
-      <div class="flex overflow-x-auto gap-10 ">
+      <div class="lg:flex overflow-x-auto gap-16 hidden ">
         <img src="./image/3.png" alt="1">
-        <img src="./image/26.png" alt="2">
-        <img src="./image/26.png" alt="2">
+        <img src="./image/26 -2.png" alt="2">
+        <img src="./image/26 -2.png" alt="2">
       </div>
     </div>
+    <div class="p-5">
+      <div
+    id="carouselExampleControls"
+    class="relative"
+    data-te-carousel-init
+    data-te-carousel-slide>
+    <div
+      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+      <div
+        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        data-te-carousel-active>
+        <img
+          src="./image/15.png"
+          class="block w-full"
+          alt="Wild Landscape" />
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item>
+        <img
+          src="./image/25.png"
+          class="block w-full"
+          alt="Camera" />
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item>
+        <img
+          src="./image/26.png"
+          class="block w-full"
+          alt="Exotic Fruits" />
+      </div>
+    </div>
+    <button
+      class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleControls"
+      data-te-slide="prev">
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Previous</span
+      >
+    </button>
+    <button
+      class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleControls"
+      data-te-slide="next">
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Next</span
+      >
+    </button>
   </div>
- <div class="p-12">
-  <div class="flex gap-28">
-    <div>
-      <span class="text-5xl font2"><a href="#lifestyle">LifeStyle</a></span>
+    </div>
+  </div>
+    
+ <div class="lg:p-12 p-5">
+  <div class="grid grid-cols-3 gap-2">
+    <div class="lg:mb-0 mb-5">
+      <span class="lg:text-5xl text-3xl font2 "><a href="#lifestyle">LifeStyle</a></span>
       <img src="./image/Rectangle 93.png" alt="1">
     </div>
-    <div>
-      <span class="text-5xl font2"><a href="#travel">Travel</a></span>
+    <div class="lg:mb-0 mb-5">
+      <span class="lg:text-5xl text-3xl font2"><a href="#travel">Travel</a></span>
       <img src="./image/Rectangle 94.png" alt="2">
     </div>
-    <div>
-      <span class="text-5xl font2"><a href="#photos">Photos</a></span>
+    <div class="lg:mb-0 mb-5">
+      <span class="lg:text-5xl text-3xl font2"><a href="#photos">Photos</a></span>
       <img src="./image/Rectangle 95.png" alt="3">
     </div>
   </div>
-  <div class="p-5">
-    <div class="border-4 border-[#0B8497]  output" id="lifestyle">
+  <div class="lg:p-5 ">
+    <div class="border-2 border-[#0B8497]  output" id="lifestyle">
       <p class="text-gray-400  font3"><span class="font-bold text-7xl">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, Pulvinar dapibus leo.</p>
     </div>
-    <div class="border-4 border-[#808013] output " id="travel">
+    <div class="border-2 border-[#808013] output " id="travel">
       <p class="text-gray-400  font3"><span class="font-bold text-7xl">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, Pulvinar dapibus leo.</p>
     </div>
-    <div class="border-4 border-[#F8A488] output" id="photos">
+    <div class="border-2 border-[#F8A488] output" id="photos">
       <p class="text-gray-400  font3"><span class="font-bold text-7xl">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, Pulvinar dapibus leo.</p>
     </div>
   </div>
  </div>
- <div class="text-center bg-[#E7F2ED] px-28 py-7">
-  <h1 class="italic text-6xl mt-10"  style="font-family: 'Playfair Display', serif;">Lets Collaborate Together</h1>
-  <div class="grid md:grid-cols-4 grid-cols-1 pt-12 text-left"  style="font-family: 'Playfair Display', serif;">
-    <div class="px-5 py-5 md:py-0"><span>What is Lorem Ipsum? <br>
+ <div class="lg:text-center text-left bg-[#E7F2ED] lg:px-28 p-5 lg:py-7 py-5">
+  <h1 class="italic lg:text-6xl text-3xl mt-10"  style="font-family: 'Playfair Display', serif;">Lets Collaborate Together</h1>
+  <div class="grid md:grid-cols-4 grid-cols-1 lg:pt-12 pt-5 text-left"  style="font-family: 'Playfair Display', serif;">
+    <div class="lg:px-5 px-2 lg:py-5 py-2 md:py-0"><span>What is Lorem Ipsum? <br>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span></div>
-    <div class="px-5 py-5 md:py-0"><span>What is Lorem Ipsum? <br>
+    <div class="lg:px-5 px-2 lg:py-5 py-2  md:py-0  hidden sm:block"><span>What is Lorem Ipsum? <br>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span></div>
-    <div class="px-5 py-5 md:py-0"><span>What is Lorem Ipsum? <br>
+    <div class="lg:px-5 px-2 lg:py-5 py-2  md:py-0 hidden sm:block "><span>What is Lorem Ipsum? <br>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span></div>
-    <div class="px-5 py-5 md:py-0"><span>What is Lorem Ipsum? <br>
+    <div class="lg:px-5 px-2 lg:py-5 py-2  md:py-0 hidden sm:block  "><span>What is Lorem Ipsum? <br>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span></div>
+      <div class="sm:hidden visible">
+        <button
+          type="button"
+          class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+          Read More
+        </button>
+      </div>
   </div>
  </div>
- <div class="text-center px-28 py-7">
-  <h1 class="italic text-4xl mt-10"  style="font-family: 'Playfair Display', serif;">RECENT POST</h1>
+ <div class="lg:text-center text-left lg:px-28 px-5 py-7">
+  <h1 class="italic lg:text-4xl text-3xl mt-10"  style="font-family: 'Playfair Display', serif;">RECENT POST</h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 pt-12">
-    <div class="flex justify-center mt-5">
+  <div class="grid gap-3 grid-cols-1 md:grid-cols-2 sm:grid-cols-2  pt-12">
+    <div class="flex justify-center mt-5 border-2 border-[#D0D0A7] lg:border-none">
       <div
         class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#E7F2ED]">
         <a href="#!">
           <img
-            class="rounded-t-lg"
+            class="rounded-t-lg sm:block hidden"
             src="./image/17 2.png"
             alt="" />
         </a>
-        <div class="p-6" style="font-family: 'Playfair Display', serif;">
+        <div class="lg:p-6 p-0" style="font-family: 'Playfair Display', serif;">
           <small class="text-muted">PHOTO</small>
           <h5
             class="mb-2 text-xl font-medium leading-tight text-neutral-800">
             Little Known Ways To Rid YourSelf
           </h5>
           <small>June 20,2021</small>
-          <p class="mb-4 text-base text-neutral-600">
+          <p class="mb-4 text-base sm:block hidden text-neutral-600">
             Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...
           </p>
           <button
           type="button"
-          class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+          class="sm:inline-block hidden  rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
           Read More
         </button>
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-5">
+    <div class="flex justify-center mt-5 border-2 border-[#D0D0A7] lg:border-none">
       <div
         class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#E7F2ED]">
-        <div class="p-6 mt-10 mb-10 " style="font-family: 'Playfair Display', serif;">
+        <div class="lg:p-6 p-0 lg:mt-10 mt-2 lg:mb-10 mb-2 " style="font-family: 'Playfair Display', serif;">
           <small class="text-muted">PHOTO</small>
           <h5
             class="mb-2 text-xl font-medium leading-tight text-neutral-800">
             Little Known Ways To Rid YourSelf
           </h5>
           <small>June 20,2021</small> 
-          <p class="mb-2 text-base text-neutral-600">
+          <p class="mb-2 sm:block hidden text-base text-neutral-600">
             Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...
           </p>
           <button
           type="button"
-          class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+          class="sm:inline-block hidden rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
           Read More
         </button>
         </div>
         <a href="#!">
           <img
-            class="rounded-b-lg"
+            class="rounded-b-lg sm:block hidden"
             src="./image/17 2.png"
             alt="" />
         </a>
      
       </div>
     </div>
-    <div class="flex justify-center mt-5">
+    <div class="flex justify-center mt-5 border-2 border-[#D0D0A7] lg:border-none">
       <div
         class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#E7F2ED]">
         <a href="#!">
           <img
-            class="rounded-t-lg"
+            class="rounded-t-lg sm:block hidden"
             src="./image/17 2.png"
             alt="" />
         </a>
-        <div class="p-6" style="font-family: 'Playfair Display', serif;">
+        <div class="lg:p-6 p-0" style="font-family: 'Playfair Display', serif;">
           <small class="text-muted">PHOTO</small>
           <h5
             class="mb-2 text-xl font-medium leading-tight text-neutral-800">
             Little Known Ways To Rid YourSelf
           </h5>
           <small>June 20,2021</small>
-          <p class="mb-4 text-base text-neutral-600">
+          <p class="mb-4 sm:block hidden text-base text-neutral-600">
             Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...
           </p>
           <button
           type="button"
-          class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+          class="sm:inline-block rounded hidden bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
           Read More
         </button>
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-5">
+    <div class="flex justify-center mt-5 border-2 border-[#D0D0A7] lg:border-none">
       <div
         class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#E7F2ED]">
-        <div class="p-6" style="font-family: 'Playfair Display', serif;">
+        <div class="lg:p-6 p-0" style="font-family: 'Playfair Display', serif;">
           <small class="text-muted">PHOTO</small>
           <h5
             class="mb-2 text-xl font-medium leading-tight text-neutral-800">
@@ -503,26 +731,26 @@
         </div>
         <a href="#!">
           <img
-            class="rounded-t-lg"
+            class="rounded-t-lg sm:block hidden"
             src="./image/17 2.png"
             alt="" />
         </a>
         <div  class="p-6" style="font-family: 'Playfair Display', serif;">
-          <p class="mb-4 text-base text-neutral-600">
+          <p class="mb-4 sm:block hidden text-base text-neutral-600">
             Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...
           </p>
           <button
           type="button"
-          class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+          class="sm:inline-block hidden rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
           Read More
         </button>
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-5">
+    <div class="flex justify-center mt-5 border-2 border-[#D0D0A7] lg:border-none">
       <div
         class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#E7F2ED]">
-        <div class="p-6" style="font-family: 'Playfair Display', serif;">
+        <div class="lg:p-6 p-0" style="font-family: 'Playfair Display', serif;">
           <small class="text-muted">PHOTO</small>
           <h5
             class="mb-2 text-xl font-medium leading-tight text-neutral-800">
@@ -532,26 +760,26 @@
         </div>
         <a href="#!">
           <img
-            class="rounded-t-lg"
+            class="rounded-t-lg sm:block hidden"
             src="./image/17 2.png"
             alt="" />
         </a>
         <div  class="p-6" style="font-family: 'Playfair Display', serif;">
-          <p class="mb-4 text-base text-neutral-600">
+          <p class="mb-4 sm:block hidden text-base text-neutral-600">
             Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...
           </p>
           <button
           type="button"
-          class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+          class="sm:inline-block hidden rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
           Read More
         </button>
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-5">
+    <div class="flex justify-center mt-5 border-2 border-[#D0D0A7] lg:border-none">
       <div
         class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#E7F2ED]">
-        <div class="p-6" style="font-family: 'Playfair Display', serif;">
+        <div class="lg:p-6 p-0" style="font-family: 'Playfair Display', serif;">
           <small class="text-muted">PHOTO</small>
           <h5
             class="mb-2 text-xl font-medium leading-tight text-neutral-800">
@@ -561,17 +789,17 @@
         </div>
         <a href="#!">
           <img
-            class="rounded-t-lg"
+            class="rounded-t-lg sm:block hidden"
             src="./image/17 2.png"
             alt="" />
         </a>
         <div  class="p-6" style="font-family: 'Playfair Display', serif;">
-          <p class="mb-4 text-base text-neutral-600">
+          <p class="mb-4 sm:block hidden text-base text-neutral-600">
             Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks to the most high. In life there will be road blocks but we will over come...
           </p>
           <button
           type="button"
-          class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+          class="sm:inline-block hidden rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
           Read More
         </button>
         </div>
@@ -579,8 +807,8 @@
     </div>
   </div>
  </div> 
- <div class="px-28 py-7 bg-[#E7F2ED]">
-  <h1 class="italic text-4xl mt-10 mb-5 text-center"  style="font-family: 'Playfair Display', serif;">Contact Us</h1>
+ <div class="lg:px-20 lg:py-7 px-5 py-5 bg-[#E7F2ED]">
+  <h1 class="italic text-4xl lg:mt-10 lg:mb-5 text-center"  style="font-family: 'Playfair Display', serif;">Contact Us</h1>
 <div class=" grid md:grid-cols-2 grid-cols-1">
   <div class="p-5">
     <form>
@@ -655,7 +883,7 @@
     </div>
 </div>
  </div>
- <div class="justify-center px-32 py-7">
+ <div class="justify-center lg:px-32 px-5 lg:py-7 py-5">
   <h1 class="italic text-4xl mt-5 text-center "  style="font-family: 'Playfair Display', serif;">FAQ</h1>
   <div>
     <div id="accordionFlushExample" class="mt-3">
@@ -782,12 +1010,12 @@
     </div>
   </div>
  </div>
- <div class="bg-neutral-800 py-7 grid grid-cols-2">
-  <div class="m-auto">
-    <p>© 2022 Haus Gitschberg | Terms & Conditions | Privacy Policy</p>
+ <div class="bg-neutral-300 py-7 grid lg:grid-cols-2 grid-cols-1">
+  <div class="m-auto order-2 p-2">
+    <p class="text-black">© 2022 Haus Gitschberg | Terms & Conditions | Privacy Policy</p>
   </div>
-  <div class="flex justify-end m-auto">
-    <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png"  class="w-5 mx-2" alt="fb">
+  <div class="flex justify-end m-auto order-1">
+    <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png"  class="w-5 mx-2 " alt="fb">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" class="w-5 mx-2"  alt="twitter">
     <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" class="w-5 mx-2"  alt="insta">
     <img src="https://cdn-icons-png.flaticon.com/512/4423/4423405.png"  class="w-5 mx-2" alt="pinterest">
